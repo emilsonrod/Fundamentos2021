@@ -1,0 +1,10 @@
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\bin\Debug\POO2021Agosto.exe.config
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\bin\Debug\POO2021Agosto.exe
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\bin\Debug\POO2021Agosto.pdb
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\obj\Debug\POO2021Agosto.csprojAssemblyReference.cache
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\obj\Debug\POO2021Agosto.csproj.CoreCompileInputs.cache
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\obj\Debug\POO2021Agosto.exe
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\obj\Debug\POO2021Agosto.pdb
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\bin\Debug\LogicaModelos.dll
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\bin\Debug\LogicaModelos.pdb
+C:\Users\emils\source\repos\POO2021Agosto\POO2021Agosto\obj\Debug\POO2021Agosto.csproj.CopyComplete

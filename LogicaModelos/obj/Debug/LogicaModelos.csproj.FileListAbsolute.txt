@@ -1,0 +1,6 @@
+C:\Users\emils\source\repos\POO2021Agosto\LogicaModelos\bin\Debug\LogicaModelos.dll
+C:\Users\emils\source\repos\POO2021Agosto\LogicaModelos\bin\Debug\LogicaModelos.pdb
+C:\Users\emils\source\repos\POO2021Agosto\LogicaModelos\obj\Debug\LogicaModelos.csprojAssemblyReference.cache
+C:\Users\emils\source\repos\POO2021Agosto\LogicaModelos\obj\Debug\LogicaModelos.csproj.CoreCompileInputs.cache
+C:\Users\emils\source\repos\POO2021Agosto\LogicaModelos\obj\Debug\LogicaModelos.dll
+C:\Users\emils\source\repos\POO2021Agosto\LogicaModelos\obj\Debug\LogicaModelos.pdb
