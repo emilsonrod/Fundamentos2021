@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ControllerEstudiantes.cs" />
     <Compile Include="Controllers\EjeCartesiano.cs" />
     <Compile Include="Controllers\TiendaAutos.cs" />
     <Compile Include="Modelos\Automovil.cs" />
     <Compile Include="Modelos\Bicicleta.cs" />
+    <Compile Include="Modelos\Estudiante.cs" />
     <Compile Include="Modelos\Linea.cs" />
     <Compile Include="Modelos\Punto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

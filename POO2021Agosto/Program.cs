@@ -45,39 +45,102 @@ namespace POO2021Agosto
             //cartisiano1.MostrarPlanos();
             //cartisiano1.MostrarDistancias();
 
+            //int menu = 0;
+            //UIConsola interfazUsuario = new UIConsola();
+            //do
+            //{
+            //    Console.WriteLine("Seleccione del menu");
+            //    Console.WriteLine("1.- AgregarAuto");
+            //    Console.WriteLine("2.- Ver CantidadAutos");
+            //    Console.WriteLine("3.- Buscar Auto");
+            //    Console.WriteLine("4.- Salir");
+            //    int menuSelected = Convert.ToInt32(Console.ReadLine());
+            //    switch (menuSelected)
+            //    {
+            //        case 1:
+            //            interfazUsuario.AgregarAuto();
+            //            menu = 1;
+            //            break;
+            //        case 2:
+            //            interfazUsuario.MostrarCantidad();
+            //            menu = 2;
+            //            break;
+            //        case 3:
+            //            interfazUsuario.MostrarDatosAuto();
+            //            menu = 3;
+            //            break;
+            //        case 4:
+            //            Console.WriteLine("Gracias!! hasta luego");
+            //            menu = 0;
+            //            break;
+            //    }
+            //}
+            //while (menu != 0);
+
+            //int valor1 = 25;
+            //int valor2 = valor1;
+
+            //valor1 = Sumar(valor1);
+
+
+            //Bicicleta bicicleta = new Bicicleta();
+            //bicicleta.CantidadRuedas = 3;
+            //bicicleta.CantidadVelocidades = 3;
+            //bicicleta.Color = "Verde";
+            //bicicleta.Marca = "Veramo";
+            //Bicicleta bicicleta2 = bicicleta;
+
+            //Bicicleta.CambiarDatosBicicleta(bicicleta);
+
             int menu = 0;
-            UIConsola interfazUsuario = new UIConsola();
+            UIEstudiante interfazUsuario = new UIEstudiante();
             do
             {
                 Console.WriteLine("Seleccione del menu");
-                Console.WriteLine("1.- AgregarAuto");
-                Console.WriteLine("2.- Ver CantidadAutos");
-                Console.WriteLine("3.- Buscar Auto");
-                Console.WriteLine("4.- Salir");
+                Console.WriteLine("1.- Agregar Estudiante");
+                Console.WriteLine("2.- Ver Cantidad Estudiantes");
+                Console.WriteLine("3.- Buscar Estudiante");
+                Console.WriteLine("4.- Agregar Nota Estudiante");
+                Console.WriteLine("5.- Salir");
                 int menuSelected = Convert.ToInt32(Console.ReadLine());
                 switch (menuSelected)
                 {
                     case 1:
-                        interfazUsuario.AgregarAuto();
+                        interfazUsuario.AgregarEstudiante();
                         menu = 1;
                         break;
                     case 2:
-                        interfazUsuario.MostrarCantidad();
+                        interfazUsuario.MostrarCantidadEstudiantes();
                         menu = 2;
                         break;
                     case 3:
-                        interfazUsuario.MostrarDatosAuto();
+                        
                         menu = 3;
                         break;
                     case 4:
+                        
+                        menu = 0;
+                        break;
+                    case 5:
                         Console.WriteLine("Gracias!! hasta luego");
                         menu = 0;
                         break;
                 }
             }
             while (menu != 0);
-
-
         }
+
+        //private static void CambiarDatosBicicleta(Bicicleta bicicleta)
+        //{
+        //    bicicleta.CantidadRuedas = 2;
+        //    bicicleta.CantidadVelocidades = 6;
+        //    bicicleta.Color = "Rojo";
+        //    bicicleta.Marca = "Santosa";
+        //}
+        //private static int Sumar(int dato)
+        //{
+        //    dato = dato + 10;
+        //    return dato;
+        //}
     }
 }

@@ -55,5 +55,19 @@ namespace LogicaModelos.Modelos
         //{
         //    marca = nuevaMarca;
         //}
+
+        public static void CambiarDatosBicicleta(Bicicleta bicicleta)
+        {
+            bicicleta.CantidadRuedas = 2;
+            bicicleta.CantidadVelocidades = 6;
+            bicicleta.Color = "Rojo";
+            bicicleta.Marca = "Santosa";
+            CambiarDatosMarca(bicicleta);
+        }
+
+        private static void CambiarDatosMarca(Bicicleta bicicleta)
+        {
+            bicicleta.Marca = "Patito";
+        }
     }
 }
