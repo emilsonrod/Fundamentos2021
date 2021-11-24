@@ -97,6 +97,47 @@ namespace POO2021Agosto
             do
             {
                 Console.WriteLine("Seleccione del menu");
+                Console.WriteLine("1.- Modulo Estudiante");
+                Console.WriteLine("2.- Modulo Personal");
+                Console.WriteLine("3.- Modulo Profesor");
+                Console.WriteLine("5.- Salir");
+                int menuSelected = Convert.ToInt32(Console.ReadLine());
+                switch (menuSelected)
+                {
+                    case 1:
+                        FuncionalidadEstudiante();
+                        menu = 1;
+                        break;
+                    case 2:
+                        FuncionalidadPersonal();
+                        menu = 2;
+                        break;
+                    case 3:
+                        FuncionalidadProfesor();
+                        menu = 3;
+                        break;
+                    case 4:
+
+                        menu = 0;
+                        break;
+                    case 5:
+                        Console.WriteLine("Gracias!! hasta luego");
+                        menu = 0;
+                        break;
+                }
+            }
+            while (menu != 0);
+
+
+        }
+
+        public static void FuncionalidadEstudiante()
+        {
+            int menu = 0;
+            UIEstudiante interfazUsuario = new UIEstudiante();
+            do
+            {
+                Console.WriteLine("Seleccione del menu");
                 Console.WriteLine("1.- Agregar Estudiante");
                 Console.WriteLine("2.- Ver Cantidad Estudiantes");
                 Console.WriteLine("3.- Buscar Estudiante");
@@ -114,11 +155,88 @@ namespace POO2021Agosto
                         menu = 2;
                         break;
                     case 3:
-                        
+
                         menu = 3;
                         break;
                     case 4:
-                        
+
+                        menu = 0;
+                        break;
+                    case 5:
+                        Console.WriteLine("Gracias!! hasta luego");
+                        menu = 0;
+                        break;
+                }
+            }
+            while (menu != 0);
+        }
+        public static void FuncionalidadPersonal()
+        {
+            int menu = 0;
+            UIPersonal interfazUsuario = new UIPersonal();
+            do
+            {
+                Console.WriteLine("Seleccione del menu");
+                Console.WriteLine("1.- Agregar Personal");
+                Console.WriteLine("2.- Ver Cantidad Trabajadores");
+                Console.WriteLine("3.- Buscar Personal");
+                Console.WriteLine("5.- Salir");
+                int menuSelected = Convert.ToInt32(Console.ReadLine());
+                switch (menuSelected)
+                {
+                    case 1:
+                        interfazUsuario.AgregarPersonal();
+                        menu = 1;
+                        break;
+                    case 2:
+                        interfazUsuario.MostrarCantidadTrabajadores();
+                        menu = 2;
+                        break;
+                    case 3:
+
+                        menu = 3;
+                        break;
+                    case 4:
+
+                        menu = 0;
+                        break;
+                    case 5:
+                        Console.WriteLine("Gracias!! hasta luego");
+                        menu = 0;
+                        break;
+                }
+            }
+            while (menu != 0);
+        }
+
+        public static void FuncionalidadProfesor()
+        {
+            int menu = 0;
+            UIProfesor interfazUsuario = new UIProfesor();
+            do
+            {
+                Console.WriteLine("Seleccione del menu");
+                Console.WriteLine("1.- Agregar Profesor");
+                Console.WriteLine("2.- Ver Cantidad Profesores");
+                Console.WriteLine("3.- Buscar Profesor");
+                Console.WriteLine("5.- Salir");
+                int menuSelected = Convert.ToInt32(Console.ReadLine());
+                switch (menuSelected)
+                {
+                    case 1:
+                        interfazUsuario.AgregarProfesor();
+                        menu = 1;
+                        break;
+                    case 2:
+                        interfazUsuario.MostrarCantidadProfesores();
+                        menu = 2;
+                        break;
+                    case 3:
+
+                        menu = 3;
+                        break;
+                    case 4:
+
                         menu = 0;
                         break;
                     case 5:

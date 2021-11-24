@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="InterfazUsuario\UIConsola.cs" />
     <Compile Include="InterfazUsuario\UIEstudiante.cs" />
+    <Compile Include="InterfazUsuario\UIPersonal.cs" />
+    <Compile Include="InterfazUsuario\UIProfesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

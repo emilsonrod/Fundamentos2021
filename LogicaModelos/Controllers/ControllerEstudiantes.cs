@@ -26,5 +26,17 @@ namespace LogicaModelos.Controllers
         {
             return listaEstudiantes.Count;
         }
+
+        public List<string> PresentarEstudiantes() 
+        {
+            List<string> saludosEst = new List<string>();
+            foreach (Estudiante estudiante in listaEstudiantes)
+            {
+                saludosEst.Add(estudiante.PresentarEstudiante());
+            }
+
+            return saludosEst;
+        } 
+
     }
 }

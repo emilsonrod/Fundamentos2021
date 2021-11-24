@@ -42,14 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ControllerEstudiantes.cs" />
+    <Compile Include="Controllers\ControllerPersonal.cs" />
+    <Compile Include="Controllers\ControllerProfesor.cs" />
     <Compile Include="Controllers\EjeCartesiano.cs" />
     <Compile Include="Controllers\TiendaAutos.cs" />
     <Compile Include="Modelos\Automovil.cs" />
     <Compile Include="Modelos\Bicicleta.cs" />
     <Compile Include="Modelos\Estudiante.cs" />
     <Compile Include="Modelos\Linea.cs" />
+    <Compile Include="Modelos\Personal.cs" />
+    <Compile Include="Modelos\Profesor.cs" />
     <Compile Include="Modelos\Punto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuperClases\Persona.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

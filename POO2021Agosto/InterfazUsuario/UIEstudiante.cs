@@ -33,7 +33,11 @@ namespace POO2021Agosto.InterfazUsuario
 
         public void MostrarCantidadEstudiantes()
         {
-            Console.WriteLine("Tenemos {0} estudiantes", controller.CantidadEstudiantes());
+            Console.WriteLine("Tenemos {0} estudiantes:", controller.CantidadEstudiantes());
+            foreach (string saludos in controller.PresentarEstudiantes())
+            {
+                Console.WriteLine(saludos);
+            }
         }
     }
 }

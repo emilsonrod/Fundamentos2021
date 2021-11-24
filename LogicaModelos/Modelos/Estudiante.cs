@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogicaModelos.SuperClases;
 
 namespace LogicaModelos.Modelos
 {
-    class Estudiante
+    class Estudiante : Persona
     {
 
         public Estudiante(string nombre, string apellido, string ci, string codEst)
@@ -18,9 +19,15 @@ namespace LogicaModelos.Modelos
             ListaNotas = new List<int>();
         }
 
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string CI { get; set; }
+        public Estudiante(Estudiante estudiante)
+        {
+            Nombre = estudiante.Nombre;
+            Apellido = estudiante.Apellido;
+            CI = estudiante.CI;
+            CodEst = estudiante.CodEst;
+            ListaNotas = new List<int>();
+        }
+
         public string CodEst { get; set; }
         public List<int> ListaNotas { get; set; }
 
