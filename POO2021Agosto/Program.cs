@@ -93,7 +93,10 @@ namespace POO2021Agosto
             //Bicicleta.CambiarDatosBicicleta(bicicleta);
 
             int menu = 0;
-            UIEstudiante interfazUsuario = new UIEstudiante();
+            UIEstudiante estudiante = new UIEstudiante();
+            UIPersonal personal = new UIPersonal();
+            UIProfesor profesor = new UIProfesor();
+
             do
             {
                 Console.WriteLine("Seleccione del menu");
@@ -105,15 +108,15 @@ namespace POO2021Agosto
                 switch (menuSelected)
                 {
                     case 1:
-                        FuncionalidadEstudiante();
+                        FuncionalidadEstudiante(estudiante);
                         menu = 1;
                         break;
                     case 2:
-                        FuncionalidadPersonal();
+                        FuncionalidadPersonal(personal);
                         menu = 2;
                         break;
                     case 3:
-                        FuncionalidadProfesor();
+                        FuncionalidadProfesor(profesor);
                         menu = 3;
                         break;
                     case 4:
@@ -128,13 +131,19 @@ namespace POO2021Agosto
             }
             while (menu != 0);
 
+            //Estudiante estudiante1 = new Estudiante("Emilson", "Rodriguez", "325685CBBA", "123EST");
+            // boxing, la habilidad que guardar cualquier objeto en una variable
+            // del tipo de la super super clase Object
+            //Object genericEstudiante = estudiante1;
+            // uboxing es la habilidad de sacar un objeto de una variable generica
+            // object y asignarla a una variable especifica de su tipo
+            //Profesor estudiante2 = (Profesor) genericEstudiante;
+        }   
 
-        }
-
-        public static void FuncionalidadEstudiante()
+        public static void FuncionalidadEstudiante(UIEstudiante interfazUsuario)
         {
             int menu = 0;
-            UIEstudiante interfazUsuario = new UIEstudiante();
+            // UIEstudiante interfazUsuario = new UIEstudiante();
             do
             {
                 Console.WriteLine("Seleccione del menu");
@@ -170,10 +179,10 @@ namespace POO2021Agosto
             }
             while (menu != 0);
         }
-        public static void FuncionalidadPersonal()
+        public static void FuncionalidadPersonal(UIPersonal interfazUsuario)
         {
             int menu = 0;
-            UIPersonal interfazUsuario = new UIPersonal();
+            // UIPersonal interfazUsuario = new UIPersonal();
             do
             {
                 Console.WriteLine("Seleccione del menu");
@@ -209,10 +218,10 @@ namespace POO2021Agosto
             while (menu != 0);
         }
 
-        public static void FuncionalidadProfesor()
+        public static void FuncionalidadProfesor(UIProfesor interfazUsuario)
         {
             int menu = 0;
-            UIProfesor interfazUsuario = new UIProfesor();
+            // UIProfesor interfazUsuario = new UIProfesor();
             do
             {
                 Console.WriteLine("Seleccione del menu");

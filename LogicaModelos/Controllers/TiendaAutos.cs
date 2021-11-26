@@ -8,6 +8,7 @@ namespace LogicaModelos.Controllers
         public TiendaAutos()
         {
             ListaAutos = new List<Automovil>();
+            object objeto; 
         }
 
         public List<Automovil> ListaAutos { get; set; }

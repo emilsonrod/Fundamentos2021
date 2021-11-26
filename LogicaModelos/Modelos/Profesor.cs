@@ -7,7 +7,7 @@ using LogicaModelos.SuperClases;
 
 namespace LogicaModelos.Modelos
 {
-    class Profesor : Persona
+    public class Profesor : Persona
     {
         public Profesor(string nombre, string apellido, string ci,
             string materia)
@@ -20,6 +20,14 @@ namespace LogicaModelos.Modelos
 
         public string Materia { get; set; }
 
+        // sobreescritura se encarga de remplazar totalmente la funcionalidad
+        // de la funcion que queremos sobreescribir
+        public override string Identificarse()
+        {
+            return string.Format("Soy un profesor con ci: {0}", CI);
+        }
+
+        // para presentarse es mas importante el nombre
         public string PresentarProfesor()
         {
             return string.Format("Profesor de la materia - {0}, nombre Completo - {1} {2}, ci- {3}",

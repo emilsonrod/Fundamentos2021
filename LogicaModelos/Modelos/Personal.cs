@@ -22,10 +22,18 @@ namespace LogicaModelos.Modelos
         public string CodPersonal { get; set; }
         public string TipoContrato { get; set; }
 
+        // para presentarse es mas importante el nombre
         public string PresentarPersonal()
         {
             return string.Format("Personal con codigo - {0}, nombre Completo - {1} {2}, ci- {3}",
                 CodPersonal, Nombre, Apellido, CI);
+        }
+
+        // sobreescritura se encarga de remplazar totalmente la funcionalidad
+        // de la funcion que queremos sobreescribir
+        public override string Identificarse()
+        {
+            return string.Format("Soy un trabajador con ci: {0}", CI);
         }
     }
 }

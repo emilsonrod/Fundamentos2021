@@ -7,9 +7,11 @@ using LogicaModelos.SuperClases;
 
 namespace LogicaModelos.Modelos
 {
-    class Estudiante : Persona
+    public class Estudiante : Persona
     {
-
+        // La sobrecarga de funciones permite tener una firma similar firma de funcion
+        // pero se la reconoce por la cantidad de parametros, o sea es diferente en la
+        // cantidad y tipo de parametros
         public Estudiante(string nombre, string apellido, string ci, string codEst)
         {
             Nombre = nombre;
@@ -31,6 +33,7 @@ namespace LogicaModelos.Modelos
         public string CodEst { get; set; }
         public List<int> ListaNotas { get; set; }
 
+        // para presentarse es mas importante el nombre
         public string PresentarEstudiante()
         {
             return string.Format("Estudiante con codigo - {0}, nombre Completo - {1} {2}, ci- {3}",
@@ -47,6 +50,13 @@ namespace LogicaModelos.Modelos
             }
 
             return sumatoria / ListaNotas.Count;
+        }
+
+        // sobreescritura se encarga de remplazar totalmente la funcionalidad
+        // de la funcion que queremos sobreescribir
+        public override string Identificarse()
+        {
+            return string.Format("Soy un estudiante con ci: {0}", CI);
         }
     }
 }
