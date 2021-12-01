@@ -23,15 +23,27 @@ namespace POO2021Agosto.InterfazUsuario
             Console.WriteLine("Ingresar Codigo Personal");
             string codigo = Console.ReadLine();
             Console.WriteLine("Ingresar Tipo Personal");
-            string tipo = Console.ReadLine();
+            Console.WriteLine("1 => Planta");
+            Console.WriteLine("2 => Consultor");
+            int tipo = Convert.ToInt32(Console.ReadLine());
 
-            controller.AgregarPersonal(nombre, apellido, ci, codigo, tipo);
-
+            if(tipo == 1)
+                controller.AgregarPersonalPlanta(nombre, apellido, ci, codigo);
+            else if(tipo == 2)
+                controller.AgregarPersonalConsultor(nombre, apellido, ci, codigo);
         }
 
         public void MostrarCantidadTrabajadores()
         {
             Console.WriteLine("Tenemos {0} trabajadores:", controller.CantidadPersonal());
+            foreach (string saludos in controller.PresentarTrabajadores())
+            {
+                Console.WriteLine(saludos);
+            }
+        }
+
+        public void IdentificarTrabajadores()
+        {
             foreach (string saludos in controller.PresentarTrabajadores())
             {
                 Console.WriteLine(saludos);

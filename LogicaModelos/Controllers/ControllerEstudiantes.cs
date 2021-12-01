@@ -21,7 +21,7 @@ namespace LogicaModelos.Controllers
         {
             Profesor profesor = new Profesor(nombre, apellido, ci, "programacion") ;
             Estudiante estudiante = new Estudiante(nombre, apellido, ci, codEst);
-            Personal personal1 = new Personal(nombre,apellido, ci, "codigo", "tipo");
+            //Personal personal1 = new Personal(nombre,apellido, ci, "codigo", "tipo");
 
             // al transformar la clase padre Persona en una clase abstracta
             // impedimos la creacion de objetos

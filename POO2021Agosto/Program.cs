@@ -131,13 +131,27 @@ namespace POO2021Agosto
             }
             while (menu != 0);
 
-            //Estudiante estudiante1 = new Estudiante("Emilson", "Rodriguez", "325685CBBA", "123EST");
+            Estudiante estudiante1 = new Estudiante("Emilson", "Rodriguez", "325685CBBA", "123EST");
             // boxing, la habilidad que guardar cualquier objeto en una variable
             // del tipo de la super super clase Object
-            //Object genericEstudiante = estudiante1;
+            Object genericEstudiante = estudiante1;
             // uboxing es la habilidad de sacar un objeto de una variable generica
-            // object y asignarla a una variable especifica de su tipo
-            //Profesor estudiante2 = (Profesor) genericEstudiante;
+            //object y asignarla a una variable especifica de su tipo
+            //if (genericEstudiante is Profesor)
+            //{
+            //    Profesor estudiante2 = (Profesor)genericEstudiante;
+            //}
+            //if (genericEstudiante is Personal)
+            //{
+            //    Personal estudiante2 = (Personal)genericEstudiante;
+            //}
+            //if (genericEstudiante is Estudiante)
+            //{
+            //    Estudiante estudiante2 = (Estudiante)genericEstudiante;
+            //}
+            //Profesor estudiante2 = genericEstudiante as Profesor;
+            //Personal estudiante3 = genericEstudiante as Personal;
+            //Estudiante estudiante4 = genericEstudiante as Estudiante;
         }   
 
         public static void FuncionalidadEstudiante(UIEstudiante interfazUsuario)
@@ -202,7 +216,7 @@ namespace POO2021Agosto
                         menu = 2;
                         break;
                     case 3:
-
+                        interfazUsuario.IdentificarTrabajadores();
                         menu = 3;
                         break;
                     case 4:

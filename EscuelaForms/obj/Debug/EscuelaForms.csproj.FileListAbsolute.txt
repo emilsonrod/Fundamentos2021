@@ -1,0 +1,9 @@
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\bin\Debug\EscuelaForms.exe.config
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\bin\Debug\EscuelaForms.exe
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\bin\Debug\EscuelaForms.pdb
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.csprojAssemblyReference.cache
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.Properties.Resources.resources
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.csproj.GenerateResource.cache
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.csproj.CoreCompileInputs.cache
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.exe
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.pdb

@@ -1,4 +1,5 @@
 ﻿using LogicaModelos.Modelos;
+using LogicaModelos.SuperClases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,16 @@ namespace LogicaModelos.Controllers
             listaPersonal = new List<Personal>();
         }
 
-        public void AgregarPersonal(string nombre, string apellido, string ci,
-            string codigo, string tipo)
+        public void AgregarPersonalPlanta(string nombre, string apellido, string ci,
+            string codigo)
         {
-            Personal personal = new Personal(nombre, apellido, ci, codigo, tipo);
+            PersonalPlanta personal = new PersonalPlanta(nombre, apellido, ci, codigo);
+            listaPersonal.Add(personal);
+        }
+        public void AgregarPersonalConsultor(string nombre, string apellido, string ci,
+            string codigo)
+        {
+            PersonalConsultor personal = new PersonalConsultor(nombre, apellido, ci, codigo);
             listaPersonal.Add(personal);
         }
 
@@ -33,7 +40,7 @@ namespace LogicaModelos.Controllers
             List<string> saludosPert = new List<string>();
             foreach (Personal personal in listaPersonal)
             {
-                saludosPert.Add(personal.PresentarPersonal());
+                saludosPert.Add(personal.Identificarse());
             }
 
             return saludosPert;
