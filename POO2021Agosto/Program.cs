@@ -21,11 +21,11 @@ namespace POO2021Agosto
             //bicicleta2.Color = "Plateado";
 
             //Bicicleta bicicleta3 = new Bicicleta("Santosa", 5, 2, "Dorado");
-            Punto punto1 = new Punto(5, 15);
-            Punto punto2 = new Punto(-3, 10);
-            Punto punto3 = new Punto(7, 35);
-            Punto punto4 = new Punto(-12, 20);
-            Punto punto5 = new Punto(-1, -15);
+            //Punto punto1 = new Punto(5, 15);
+            //Punto punto2 = new Punto(-3, 10);
+            //Punto punto3 = new Punto(7, 35);
+            //Punto punto4 = new Punto(-12, 20);
+            //Punto punto5 = new Punto(-1, -15);
             ////Console.WriteLine(punto1.MostrarCoordenadas());
             ////Console.WriteLine(punto2.MostrarCoordenadas());
 
@@ -92,49 +92,49 @@ namespace POO2021Agosto
 
             //Bicicleta.CambiarDatosBicicleta(bicicleta);
 
-            int menu = 0;
-            UIEstudiante estudiante = new UIEstudiante();
-            UIPersonal personal = new UIPersonal();
-            UIProfesor profesor = new UIProfesor();
+            //int menu = 0;
+            //UIEstudiante estudiante = new UIEstudiante();
+            //UIPersonal personal = new UIPersonal();
+            //UIProfesor profesor = new UIProfesor();
 
-            do
-            {
-                Console.WriteLine("Seleccione del menu");
-                Console.WriteLine("1.- Modulo Estudiante");
-                Console.WriteLine("2.- Modulo Personal");
-                Console.WriteLine("3.- Modulo Profesor");
-                Console.WriteLine("5.- Salir");
-                int menuSelected = Convert.ToInt32(Console.ReadLine());
-                switch (menuSelected)
-                {
-                    case 1:
-                        FuncionalidadEstudiante(estudiante);
-                        menu = 1;
-                        break;
-                    case 2:
-                        FuncionalidadPersonal(personal);
-                        menu = 2;
-                        break;
-                    case 3:
-                        FuncionalidadProfesor(profesor);
-                        menu = 3;
-                        break;
-                    case 4:
+            //do
+            //{
+            //    Console.WriteLine("Seleccione del menu");
+            //    Console.WriteLine("1.- Modulo Estudiante");
+            //    Console.WriteLine("2.- Modulo Personal");
+            //    Console.WriteLine("3.- Modulo Profesor");
+            //    Console.WriteLine("5.- Salir");
+            //    int menuSelected = Convert.ToInt32(Console.ReadLine());
+            //    switch (menuSelected)
+            //    {
+            //        case 1:
+            //            FuncionalidadEstudiante(estudiante);
+            //            menu = 1;
+            //            break;
+            //        case 2:
+            //            FuncionalidadPersonal(personal);
+            //            menu = 2;
+            //            break;
+            //        case 3:
+            //            FuncionalidadProfesor(profesor);
+            //            menu = 3;
+            //            break;
+            //        case 4:
 
-                        menu = 0;
-                        break;
-                    case 5:
-                        Console.WriteLine("Gracias!! hasta luego");
-                        menu = 0;
-                        break;
-                }
-            }
-            while (menu != 0);
+            //            menu = 0;
+            //            break;
+            //        case 5:
+            //            Console.WriteLine("Gracias!! hasta luego");
+            //            menu = 0;
+            //            break;
+            //    }
+            //}
+            //while (menu != 0);
 
-            Estudiante estudiante1 = new Estudiante("Emilson", "Rodriguez", "325685CBBA", "123EST");
-            // boxing, la habilidad que guardar cualquier objeto en una variable
-            // del tipo de la super super clase Object
-            Object genericEstudiante = estudiante1;
+            //Estudiante estudiante1 = new Estudiante("Emilson", "Rodriguez", "325685CBBA", "123EST");
+            //// boxing, la habilidad que guardar cualquier objeto en una variable
+            //// del tipo de la super super clase Object
+            //Object genericEstudiante = estudiante1;
             // uboxing es la habilidad de sacar un objeto de una variable generica
             //object y asignarla a una variable especifica de su tipo
             //if (genericEstudiante is Profesor)
@@ -152,6 +152,10 @@ namespace POO2021Agosto
             //Profesor estudiante2 = genericEstudiante as Profesor;
             //Personal estudiante3 = genericEstudiante as Personal;
             //Estudiante estudiante4 = genericEstudiante as Estudiante;
+            Punto punto1 = new Punto(12, 25);
+            int numero1 = 125;
+            Console.WriteLine(numero1.ToString());
+            Console.WriteLine(punto1.ToString());
         }   
 
         public static void FuncionalidadEstudiante(UIEstudiante interfazUsuario)

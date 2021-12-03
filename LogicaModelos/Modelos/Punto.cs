@@ -42,5 +42,11 @@ namespace LogicaModelos.Modelos
             return string.Format("Mis coordenadas son {0}, {1} y estoy en el plano {2}",
                 CoordX, CoordY, plano);
         }
+
+        public override string ToString()
+        {
+            return string.Format("Punto con coordenadas {0}, {1}",
+                CoordX, CoordY);
+        }
     }
 }
