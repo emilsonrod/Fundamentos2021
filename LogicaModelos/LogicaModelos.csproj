@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ControllerEstudiantes.cs" />
+    <Compile Include="Controllers\ControllerMateria.cs" />
     <Compile Include="Controllers\ControllerPersonal.cs" />
     <Compile Include="Controllers\ControllerProfesor.cs" />
     <Compile Include="Controllers\EjeCartesiano.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Modelos\Bicicleta.cs" />
     <Compile Include="Modelos\Estudiante.cs" />
     <Compile Include="Modelos\Linea.cs" />
+    <Compile Include="Modelos\Materia.cs" />
     <Compile Include="Modelos\PersonalConsultor.cs" />
     <Compile Include="Modelos\PersonalPlanta.cs" />
     <Compile Include="Modelos\Profesor.cs" />

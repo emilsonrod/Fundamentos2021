@@ -45,6 +45,5 @@ namespace LogicaModelos.Controllers
 
             return saludosEst;
         } 
-
     }
 }

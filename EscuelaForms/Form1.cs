@@ -8,15 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogicaModelos.Controllers;
 
 namespace EscuelaForms
 {
     public partial class Form1 : Form
     {
         EstudiantesForm formularioEstudiantes;
+        ControllerProfesor controllerProfesor;
+        ControllerMateria controllerMateria;
         public Form1()
         {
             InitializeComponent();
+            controllerProfesor = new ControllerProfesor();
+            controllerMateria = new ControllerMateria();
             //Form Estudiantes
             //this.formularioEstudiantes = new EstudiantesForm("Hola formulario Estudiantes");
         }
@@ -31,7 +36,10 @@ namespace EscuelaForms
 
         private void delegadoButton2(object sender, EventArgs argEvent)
         {
-            this.BackColor = System.Drawing.Color.Yellow;
+            //this.BackColor = System.Drawing.Color.Yellow;
+            MateriasForm materias = new MateriasForm(
+                controllerMateria, controllerProfesor);
+            materias.Show();
         }
 
         private void delegadoHoverButton(object sender, EventArgs argEvent)
@@ -41,6 +49,12 @@ namespace EscuelaForms
                 System.Windows.Forms.Button buttonSample = (System.Windows.Forms.Button)sender;
                 buttonSample.BackColor = System.Drawing.Color.White;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProfesoresForm profesores = new ProfesoresForm(controllerProfesor);
+            profesores.Show();
         }
     }
 }

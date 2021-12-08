@@ -9,3 +9,8 @@ C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.ex
 C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.pdb
 C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.Form1.resources
 C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.FormulariosEscuela.EstudiantesForm.resources
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\bin\Debug\LogicaModelos.dll
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\bin\Debug\LogicaModelos.pdb
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.FormulariosEscuela.MateriasForm.resources
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.FormulariosEscuela.ProfesoresForm.resources
+C:\Users\emils\source\repos\POO2021Agosto\EscuelaForms\obj\Debug\EscuelaForms.csproj.CopyComplete

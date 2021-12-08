@@ -38,5 +38,10 @@ namespace LogicaModelos.Controllers
 
             return saludosPert;
         }
+
+        public Profesor BuscarProfesor(string codigo)
+        {
+            return listaProfesores.Find(profesor => profesor.CI.Equals(codigo));
+        }
     }
 }

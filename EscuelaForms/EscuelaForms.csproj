@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LogicaModelos">
+      <HintPath>..\LogicaModelos\bin\Debug\LogicaModelos.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +61,18 @@
     <Compile Include="FormulariosEscuela\EstudiantesForm.Designer.cs">
       <DependentUpon>EstudiantesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosEscuela\MateriasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosEscuela\MateriasForm.Designer.cs">
+      <DependentUpon>MateriasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosEscuela\ProfesoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosEscuela\ProfesoresForm.Designer.cs">
+      <DependentUpon>ProfesoresForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +80,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosEscuela\EstudiantesForm.resx">
       <DependentUpon>EstudiantesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosEscuela\MateriasForm.resx">
+      <DependentUpon>MateriasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosEscuela\ProfesoresForm.resx">
+      <DependentUpon>ProfesoresForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
